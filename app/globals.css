@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #333333;
 }
 
 @theme inline {
@@ -12,15 +12,49 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background: #ffffff;
+  color: #333333;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+h1 {
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+h2, h3, h4 {
+  font-weight: 600;
+  color: #333333;
+}
+
+p, li, span {
+  color: #333333;
+}
+
+/* Verbeterde leesbaarheid voor kaarten */
+.card-content {
+  color: #333333;
+  font-weight: 400;
+}
+
+/* Verhoog contrast voor links */
+a {
+  color: #0056b3;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Animatie voor menu */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
 }
