@@ -1,0 +1,61 @@
+[
+  {
+    "id": "1",
+    "title": "Welkom op het nieuwe bewonersplatform!",
+    "content": "Beste bewoners, welkom op ons nieuwe digitale platform. Hier kunnen we gemakkelijk communiceren en informatie delen. Laat gerust een reactie achter!",
+    "authorId": "1",
+    "authorName": "Beheerder",
+    "createdAt": "2025-05-01T09:00:00Z",
+    "updatedAt": "2025-05-01T09:00:00Z",
+    "comments": [
+      {
+        "id": "1",
+        "content": "Wat een goed initiatief! Ik kijk ernaar uit om hier meer te gebruiken.",
+        "authorId": "2",
+        "authorName": "Anna Jansen",
+        "postId": "1",
+        "createdAt": "2025-05-01T10:30:00Z",
+        "updatedAt": "2025-05-01T10:30:00Z"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Onderhoud lift gepland",
+    "content": "Op 25 mei zal er onderhoud aan de lift plaatsvinden tussen 09:00 en 12:00. De lift is dan buiten gebruik. Excuses voor het ongemak.",
+    "authorId": "1",
+    "authorName": "Beheerder",
+    "createdAt": "2025-05-05T14:00:00Z",
+    "updatedAt": "2025-05-05T14:00:00Z",
+    "comments": []
+  },
+  {
+    "id": "3",
+    "title": "Gezocht: Vrijwilligers voor buurtbarbecue",
+    "content": "Voor de buurtbarbecue op 15 juni zoeken we nog vrijwilligers die willen helpen met opbouwen, koken en opruimen. Meld je aan via een reactie!",
+    "authorId": "3",
+    "authorName": "Peter de Vries",
+    "createdAt": "2025-05-08T16:45:00Z",
+    "updatedAt": "2025-05-08T16:45:00Z",
+    "comments": [
+      {
+        "id": "2",
+        "content": "Ik wil graag helpen met koken!",
+        "authorId": "4",
+        "authorName": "Maria Smit",
+        "postId": "3",
+        "createdAt": "2025-05-08T18:20:00Z",
+        "updatedAt": "2025-05-08T18:20:00Z"
+      },
+      {
+        "id": "3",
+        "content": "Ik kan helpen met opbouwen en opruimen.",
+        "authorId": "5",
+        "authorName": "Jan Bakker",
+        "postId": "3",
+        "createdAt": "2025-05-09T09:15:00Z",
+        "updatedAt": "2025-05-09T09:15:00Z"
+      }
+    ]
+  }
+]

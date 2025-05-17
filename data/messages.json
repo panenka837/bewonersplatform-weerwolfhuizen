@@ -1,0 +1,206 @@
+[
+  {
+    "id": "39e31249-188c-40d6-83f3-b037c54a7ed2",
+    "senderId": "temp-1746883591080",
+    "senderName": "Gast Gebruiker",
+    "recipientId": "2",
+    "content": "test",
+    "createdAt": "2025-05-10T13:26:42.760Z",
+    "isRead": false,
+    "type": "private"
+  },
+  {
+    "id": "2df496db-947c-4574-b651-f41ce4b51658",
+    "senderId": "temp-1746883876243",
+    "senderName": "Gast Gebruiker",
+    "recipientId": "2",
+    "content": "test",
+    "createdAt": "2025-05-10T13:31:36.405Z",
+    "isRead": false,
+    "type": "private"
+  },
+  {
+    "id": "84aa2663-117d-4b43-98a1-1e6ae8341400",
+    "senderId": "temp-1746884206197",
+    "senderName": "Gast Gebruiker",
+    "recipientId": "2",
+    "content": "test",
+    "createdAt": "2025-05-10T13:36:59.268Z",
+    "isRead": false,
+    "type": "private"
+  },
+  {
+    "id": "04023e5f-cb6c-4bb8-8b2f-2835b5112d84",
+    "senderId": "temp-1746884503039",
+    "senderName": "Gast Gebruiker",
+    "recipientId": "2",
+    "content": "test",
+    "createdAt": "2025-05-10T13:42:01.785Z",
+    "isRead": false,
+    "type": "private"
+  },
+  {
+    "id": "e2403aaa-baef-4598-90cb-24141f859ddf",
+    "senderId": "temp-1746884503039",
+    "senderName": "Gast Gebruiker",
+    "recipientId": null,
+    "content": "fout",
+    "createdAt": "2025-05-10T13:42:41.211Z",
+    "isRead": false,
+    "type": "group"
+  },
+  {
+    "id": "c04a653c-7880-4072-a868-45e8bd6e46cd",
+    "senderId": "temp-1746884503039",
+    "senderName": "Gast Gebruiker",
+    "recipientId": "2",
+    "content": "fout",
+    "createdAt": "2025-05-10T13:43:11.878Z",
+    "isRead": false,
+    "type": "private"
+  },
+  {
+    "id": "6e41e87b-f62c-4cb7-bcee-f47793b42f7c",
+    "senderId": "temp-1746885854086",
+    "senderName": "Gast Gebruiker",
+    "recipientId": "2",
+    "content": "test",
+    "createdAt": "2025-05-10T14:04:23.957Z",
+    "isRead": false,
+    "type": "private"
+  },
+  {
+    "id": "fb2bd926-b5b1-4ba4-af44-77ef0c1f31e9",
+    "senderId": "1",
+    "senderName": "Beheerder",
+    "recipientId": "2",
+    "content": "test",
+    "createdAt": "2025-05-10T14:05:18.711Z",
+    "isRead": true,
+    "type": "private"
+  },
+  {
+    "id": "2aff5bad-6eac-4ca2-999a-e509105f5a83",
+    "senderId": "1",
+    "senderName": "Beheerder",
+    "recipientId": "3",
+    "content": "123",
+    "createdAt": "2025-05-10T14:05:50.332Z",
+    "isRead": false,
+    "type": "private"
+  },
+  {
+    "id": "78c239a6-3749-4435-a76a-63dab95260d7",
+    "senderId": "1",
+    "senderName": "Beheerder",
+    "recipientId": null,
+    "content": "ja",
+    "createdAt": "2025-05-10T14:06:43.929Z",
+    "isRead": false,
+    "type": "group"
+  },
+  {
+    "id": "cf1ecfc6-29b0-4259-9058-5eaf7a07fe46",
+    "senderId": "1",
+    "senderName": "Beheerder",
+    "recipientId": "2",
+    "content": "2",
+    "createdAt": "2025-05-10T14:13:08.773Z",
+    "isRead": true,
+    "type": "private"
+  },
+  {
+    "id": "0a6a5862-4ec1-4dc8-ad62-fe208923807e",
+    "senderId": "1",
+    "senderName": "Beheerder",
+    "recipientId": null,
+    "content": "nee",
+    "createdAt": "2025-05-10T14:13:30.331Z",
+    "isRead": false,
+    "type": "group"
+  },
+  {
+    "id": "9e20ed78-0a33-48c8-b952-0e51cad1d35b",
+    "senderId": "1",
+    "senderName": "Beheerder",
+    "recipientId": "2",
+    "content": "3",
+    "createdAt": "2025-05-10T14:13:43.193Z",
+    "isRead": true,
+    "type": "private"
+  },
+  {
+    "id": "5061bf15-c829-47c8-8145-ab2e558024a6",
+    "senderId": "1",
+    "senderName": "Beheerder",
+    "recipientId": null,
+    "content": "beter",
+    "createdAt": "2025-05-10T14:19:16.957Z",
+    "isRead": false,
+    "type": "group"
+  },
+  {
+    "id": "40559aa5-831f-4983-84a6-4f48b92c26dd",
+    "senderId": "1",
+    "senderName": "Beheerder",
+    "recipientId": null,
+    "content": "Hallo Beheerder, ik ben Beheerder en ik ga je helpen met je melding \"lift kapot\". Hoe kan ik je helpen?",
+    "createdAt": "2025-05-10T18:12:46.011Z",
+    "isRead": false,
+    "type": "private",
+    "conversationId": "77f2a19f-94c7-463e-bc70-fb72a20cc685"
+  },
+  {
+    "id": "976e0574-313c-4df7-829e-7ebe64fbc339",
+    "senderId": "1",
+    "senderName": "Beheerder",
+    "recipientId": null,
+    "content": "lift werkt weer",
+    "createdAt": "2025-05-10T18:31:37.388Z",
+    "isRead": false,
+    "type": "private",
+    "conversationId": "77f2a19f-94c7-463e-bc70-fb72a20cc685"
+  },
+  {
+    "id": "b1da687e-c2e4-4cc7-b1af-56fba526abba",
+    "senderId": "1",
+    "senderName": "Beheerder",
+    "recipientId": "2",
+    "content": "Hallo Anna Jansen, ik ben Beheerder en ik ga je helpen met je melding \"test\". Hoe kan ik je helpen?",
+    "createdAt": "2025-05-10T19:17:27.910Z",
+    "isRead": true,
+    "type": "private",
+    "conversationId": "b17a29b6-a8d5-4e34-8200-866365c68ea1"
+  },
+  {
+    "id": "59f4929d-2c63-46e9-98b1-ed49c7715a4f",
+    "senderId": "1",
+    "senderName": "Beheerder",
+    "recipientId": "2",
+    "content": "ontvangen ",
+    "createdAt": "2025-05-10T19:17:54.802Z",
+    "isRead": true,
+    "type": "private",
+    "conversationId": "b17a29b6-a8d5-4e34-8200-866365c68ea1"
+  },
+  {
+    "id": "7d0f724e-6226-47a2-bf1e-b272c4bea7a8",
+    "senderId": "2",
+    "senderName": "Anna Jansen",
+    "recipientId": "1",
+    "content": "email",
+    "createdAt": "2025-05-12T06:17:55.412Z",
+    "isRead": true,
+    "type": "private"
+  },
+  {
+    "id": "c251f459-3f33-4d63-8103-457866937636",
+    "senderId": "7",
+    "senderName": "Thomas Visser",
+    "recipientId": null,
+    "content": "3",
+    "createdAt": "2025-05-13T10:11:39.557Z",
+    "isRead": false,
+    "type": "group"
+  }
+]

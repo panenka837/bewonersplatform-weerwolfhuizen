@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "name": "Beheerder",
+    "email": "beheerder@weerwolfhuizen.nl",
+    "role": "ADMIN",
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "password": "$2b$10$5aTWMLtJsUCKisdlMAlDDO3Ba/sjz1mSl6iwyERhDNXqeaG.FFl8i"
+  },
+  {
+    "id": "2",
+    "name": "Anna Jansen",
+    "email": "a.jansen@example.com",
+    "role": "USER",
+    "createdAt": "2025-01-15T10:30:00Z",
+    "updatedAt": "2025-01-15T10:30:00Z",
+    "password": "$2b$10$EtTF9Iucf.cqbwHNpXQ1iO7adg/8hlCxmv4aXsKy6I27Zk6zOFgvK"
+  },
+  {
+    "id": "3",
+    "name": "Peter de Vries",
+    "email": "p.devries@example.com",
+    "role": "USER",
+    "createdAt": "2025-01-20T14:45:00Z",
+    "updatedAt": "2025-01-20T14:45:00Z",
+    "password": "$2b$10$pdeJDetevPKPcmTBpkYcxOmH4xa5uzjOHaM9VmrLpIrx48ykeGKAG"
+  },
+  {
+    "id": "4",
+    "name": "Maria Smit",
+    "email": "m.smit@example.com",
+    "role": "USER",
+    "createdAt": "2025-02-05T09:15:00Z",
+    "updatedAt": "2025-02-05T09:15:00Z",
+    "password": "$2b$10$1ioSC5OO602zC32k22H17uW00Rn0sSSFs5qgF.trLVCI9WUGrJHie"
+  },
+  {
+    "id": "5",
+    "name": "Jan Bakker",
+    "email": "j.bakker@example.com",
+    "role": "USER",
+    "createdAt": "2025-02-10T16:20:00Z",
+    "updatedAt": "2025-02-10T16:20:00Z",
+    "password": "$2b$10$Ki2rI7enJxdwa2/kehDV3uWGaaugkyEu13kr31cfnX/af3W.T8EFa"
+  },
+  {
+    "id": "6",
+    "name": "Lisa Jansen",
+    "email": "l.jansen@weerwolfhuizen.nl",
+    "role": "COACH",
+    "createdAt": "2025-01-05T08:30:00Z",
+    "updatedAt": "2025-01-05T08:30:00Z",
+    "password": "$2b$10$wNlpjXdQrvEGFAveyZXUCuxwJzK2QviSPX8ugHjHMFglgfBb9UqpO"
+  },
+  {
+    "id": "7",
+    "name": "Thomas Visser",
+    "email": "t.visser@weerwolfhuizen.nl",
+    "role": "COACH",
+    "createdAt": "2025-01-10T09:45:00Z",
+    "updatedAt": "2025-05-13T10:07:31.566Z",
+    "password": "$2b$10$U3E/FlZzntx2Yox1uZY9q.heutn2JmaTEoNuEdV55mW5hphOb1pt."
+  }
+]

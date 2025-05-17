@@ -1,25 +1,67 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-const roles = [
-  { value: "beheerder", label: "Beheerder" },
-  { value: "wooncoach", label: "Wooncoach" },
-  { value: "bewoner", label: "Bewoner" },
-];
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
-  const [role, setRole] = useState(roles[2].value);
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
   const router = useRouter();
 
-  function handleLogin(e: React.FormEvent) {
-    e.preventDefault();
-    // Simpele role-based login (demo):
-    if (email && role) {
-      localStorage.setItem("user_role", role);
-      localStorage.setItem("user_email", email);
+  useEffect(() => {
+    // Controleer of de gebruiker al is ingelogd
+    const token = localStorage.getItem("auth_token");
+    if (token) {
       router.push("/");
+    }
+  }, [router]);
+
+  async function handleLogin(e: React.FormEvent) {
+    e.preventDefault();
+    setError(null);
+    setLoading(true);
+    
+    try {
+      // Valideer invoer
+      if (!email || !password) {
+        setError("Vul alle verplichte velden in");
+        setLoading(false);
+        return;
+      }
+      
+      // Verstuur login verzoek naar de API
+      const response = await fetch("/api/auth", {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+      
+      const data = await response.json();
+      
+      if (!response.ok) {
+        setError(data.error || "Er is een fout opgetreden bij het inloggen");
+        setLoading(false);
+        return;
+      }
+      
+      // Sla de token en gebruikersgegevens op
+      localStorage.setItem("auth_token", data.token);
+      localStorage.setItem("user_role", data.user.role);
+      localStorage.setItem("user_email", data.user.email);
+      localStorage.setItem("user_name", data.user.name || "");
+      localStorage.setItem("user_id", data.user.id || "");
+      
+      // Navigeer naar de homepage
+      router.push("/");
+    } catch (error) {
+      console.error("Login error:", error);
+      setError("Er is een fout opgetreden bij het inloggen");
+      setLoading(false);
     }
   }
 
@@ -35,6 +77,13 @@ export default function LoginPage() {
           </div>
         </div>
         <h1 className="text-2xl font-bold mb-6 text-center text-blue-800">Inloggen bewonersplatform</h1>
+        
+        {error && (
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 text-sm">
+            {error}
+          </div>
+        )}
+        
         <label className="block mb-2 font-semibold text-blue-900">E-mail</label>
         <input
           type="email"
@@ -43,23 +92,31 @@ export default function LoginPage() {
           value={email}
           onChange={e => setEmail(e.target.value)}
           placeholder="jouw@email.nl"
+          disabled={loading}
         />
-        <label className="block mb-2 font-semibold text-blue-900">Rol</label>
-        <select
-          className="w-full border-2 border-blue-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 rounded px-3 py-2 mb-6 bg-blue-50 text-blue-900 outline-none transition"
-          value={role}
-          onChange={e => setRole(e.target.value)}
-        >
-          {roles.map(r => (
-            <option key={r.value} value={r.value}>{r.label}</option>
-          ))}
-        </select>
+        
+        <label className="block mb-2 font-semibold text-blue-900">Wachtwoord</label>
+        <input
+          type="password"
+          required
+          className="w-full border-2 border-blue-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 rounded px-3 py-2 mb-6 bg-blue-50 placeholder-blue-300 text-blue-900 outline-none transition"
+          value={password}
+          onChange={e => setPassword(e.target.value)}
+          placeholder="••••••••"
+          disabled={loading}
+        />
+        
         <button
           type="submit"
-          className="w-full bg-blue-700 text-white font-semibold py-2 rounded-lg shadow hover:bg-blue-800 transition border border-blue-800/30"
+          className={`w-full bg-blue-700 text-white font-semibold py-2 rounded-lg shadow hover:bg-blue-800 transition border border-blue-800/30 ${loading ? 'opacity-70 cursor-not-allowed' : ''}`}
+          disabled={loading}
         >
-          Inloggen
+          {loading ? 'Bezig met inloggen...' : 'Inloggen'}
         </button>
+        
+        <div className="mt-6 text-center text-sm">
+          <p className="text-gray-600">Nog geen account? Neem contact op met de beheerder.</p>
+        </div>
       </form>
     </main>
   );

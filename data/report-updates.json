@@ -1,0 +1,20 @@
+[
+  {
+    "id": "48231b14-40b9-4660-bd51-bad96f17e7ba",
+    "reportId": "a8a1e8a7-69f7-402b-b7d5-1b042e532cd3",
+    "content": "lift werkt weer",
+    "authorId": "1",
+    "authorName": "Beheerder",
+    "createdAt": "2025-05-10T18:32:07.719Z",
+    "isPublic": true
+  },
+  {
+    "id": "34a7fcb1-a425-4c13-ab1a-426bdc29b969",
+    "reportId": "1e0a7548-be29-4040-ba0e-0c5b6691f963",
+    "content": "ontvangen ",
+    "authorId": "1",
+    "authorName": "Beheerder",
+    "createdAt": "2025-05-10T19:18:22.589Z",
+    "isPublic": true
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "title": "Vergadering Bewonerscommissie",
+    "description": "Maandelijkse vergadering van de bewonerscommissie",
+    "location": "Gemeenschappelijke ruimte",
+    "startTime": "2025-05-15T19:00:00Z",
+    "endTime": "2025-05-15T21:00:00Z",
+    "createdAt": "2025-05-01T10:00:00Z",
+    "updatedAt": "2025-05-01T10:00:00Z",
+    "type": "MEETING",
+    "hostId": "1",
+    "hostName": "Beheerder",
+    "attendeeIds": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "status": "CONFIRMED"
+  },
+  {
+    "id": "2",
+    "title": "Tuinonderhoud",
+    "description": "Gezamenlijk onderhoud van de gemeenschappelijke tuin",
+    "location": "Tuin",
+    "startTime": "2025-05-20T14:00:00Z",
+    "endTime": "2025-05-20T17:00:00Z",
+    "createdAt": "2025-05-02T11:30:00Z",
+    "updatedAt": "2025-05-02T11:30:00Z",
+    "type": "ACTIVITY",
+    "hostId": "1",
+    "hostName": "Beheerder",
+    "attendeeIds": [],
+    "status": "CONFIRMED"
+  },
+  {
+    "id": "3",
+    "title": "Buurtbarbecue",
+    "description": "Jaarlijkse barbecue voor alle bewoners",
+    "location": "Binnenplaats",
+    "startTime": "2025-06-15T16:00:00Z",
+    "endTime": "2025-06-15T22:00:00Z",
+    "createdAt": "2025-05-03T09:45:00Z",
+    "updatedAt": "2025-05-03T09:45:00Z",
+    "type": "ACTIVITY",
+    "hostId": "3",
+    "hostName": "Peter de Vries",
+    "attendeeIds": [
+      "2",
+      "4",
+      "5"
+    ],
+    "status": "CONFIRMED"
+  },
+  {
+    "id": "d1e0a742-5074-4c4c-834f-d915faede2f3",
+    "title": "test",
+    "description": "ik doe maar wat",
+    "location": "thuis",
+    "startTime": "2025-05-16T09:00:00",
+    "endTime": "2025-05-16T12:00:00",
+    "createdAt": "2025-05-09T16:40:00.811Z",
+    "updatedAt": "2025-05-09T16:55:39.139Z",
+    "type": "MEETING",
+    "hostId": "1",
+    "hostName": "Beheerder",
+    "attendeeIds": [],
+    "status": "CONFIRMED"
+  },
+  {
+    "id": "d642cac1-ac80-40b5-a889-90801d4138af",
+    "title": "dummy",
+    "description": "testversie",
+    "location": "www",
+    "startTime": "2025-05-22T13:00:00",
+    "endTime": "2025-05-22T14:00:00",
+    "createdAt": "2025-05-12T06:53:12.525Z",
+    "updatedAt": "2025-05-12T06:53:12.525Z",
+    "type": "CONSULTATION",
+    "hostId": "1",
+    "hostName": "Beheerder",
+    "attendeeIds": [],
+    "status": "PENDING"
+  }
+]

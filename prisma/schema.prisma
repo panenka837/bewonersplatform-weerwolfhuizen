@@ -1,0 +1,90 @@
+// Prisma schema voor WWH Bewonersplatform
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// Gebruikers model
+model User {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  email     String   @unique
+  password  String   // Gehashed wachtwoord
+  name      String?
+  role      String   @default("USER") // ADMIN, COACH, USER
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relaties
+  appointments Appointment[] @relation("UserAppointments")
+  posts        Post[]        @relation("UserPosts")
+  comments     Comment[]     @relation("UserComments")
+}
+
+// Afspraken/kalender model
+model Appointment {
+  id            String   @id @default(auto()) @map("_id") @db.ObjectId
+  title         String
+  date          DateTime
+  status        String   @default("in afwachting") // in afwachting, goedgekeurd, afgewezen
+  adminResponse String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // Relaties
+  owner   User   @relation("UserAppointments", fields: [ownerId], references: [id])
+  ownerId String  @db.ObjectId
+}
+
+// Prikbord berichten model
+model Post {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relaties
+  author    User      @relation("UserPosts", fields: [authorId], references: [id])
+  authorId  String    @db.ObjectId
+  comments  Comment[] @relation("PostComments")
+}
+
+// Reacties op prikbord berichten
+model Comment {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relaties
+  author   User   @relation("UserComments", fields: [authorId], references: [id])
+  authorId String  @db.ObjectId
+  post     Post   @relation("PostComments", fields: [postId], references: [id], onDelete: Cascade)
+  postId   String  @db.ObjectId
+}
+
+// Documenten model
+model Document {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  name        String
+  description String?
+  type        String   // PDF, Word, etc.
+  filePath    String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// Mededelingen model
+model Notice {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  title     String
+  content   String
+  important Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

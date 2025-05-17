@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "userId": "all",
+    "title": "Welkom bij het notificatiesysteem",
+    "message": "Vanaf nu ontvang je notificaties over belangrijke gebeurtenissen op het platform.",
+    "type": "INFO",
+    "isRead": false,
+    "link": null,
+    "createdAt": "2025-05-12T19:10:00.000Z"
+  },
+  {
+    "id": "2",
+    "userId": "1",
+    "title": "Nieuwe reactie op je bericht",
+    "message": "Er is een nieuwe reactie op je bericht 'Buurtbarbecue'.",
+    "type": "MESSAGE",
+    "isRead": false,
+    "link": "/bulletin",
+    "createdAt": "2025-05-12T19:15:00.000Z"
+  },
+  {
+    "id": "3",
+    "userId": "2",
+    "title": "Nieuw item op de marktplaats",
+    "message": "Er is een nieuw item toegevoegd aan de marktplaats in de categorie 'Gezocht'.",
+    "type": "BOARD",
+    "isRead": true,
+    "link": "/board",
+    "createdAt": "2025-05-12T19:20:00.000Z"
+  }
+]

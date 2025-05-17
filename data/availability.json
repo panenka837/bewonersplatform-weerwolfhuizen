@@ -1,0 +1,112 @@
+[
+  {
+    "id": "1",
+    "userId": "1",
+    "userName": "Beheerder",
+    "role": "ADMIN",
+    "weeklySchedule": [
+      {
+        "day": "MONDAY",
+        "slots": [
+          { "startTime": "09:00", "endTime": "12:00" },
+          { "startTime": "13:00", "endTime": "17:00" }
+        ]
+      },
+      {
+        "day": "TUESDAY",
+        "slots": [
+          { "startTime": "09:00", "endTime": "12:00" },
+          { "startTime": "13:00", "endTime": "17:00" }
+        ]
+      },
+      {
+        "day": "WEDNESDAY",
+        "slots": [
+          { "startTime": "09:00", "endTime": "12:00" }
+        ]
+      },
+      {
+        "day": "THURSDAY",
+        "slots": [
+          { "startTime": "13:00", "endTime": "17:00" }
+        ]
+      },
+      {
+        "day": "FRIDAY",
+        "slots": [
+          { "startTime": "09:00", "endTime": "12:00" },
+          { "startTime": "13:00", "endTime": "17:00" }
+        ]
+      }
+    ],
+    "exceptions": [
+      {
+        "date": "2025-05-25",
+        "available": false,
+        "reason": "Vakantie"
+      },
+      {
+        "date": "2025-05-26",
+        "available": false,
+        "reason": "Vakantie"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "userId": "6",
+    "userName": "Lisa Jansen",
+    "role": "COACH",
+    "weeklySchedule": [
+      {
+        "day": "MONDAY",
+        "slots": [
+          { "startTime": "13:00", "endTime": "17:00" }
+        ]
+      },
+      {
+        "day": "WEDNESDAY",
+        "slots": [
+          { "startTime": "09:00", "endTime": "12:00" },
+          { "startTime": "13:00", "endTime": "17:00" }
+        ]
+      },
+      {
+        "day": "FRIDAY",
+        "slots": [
+          { "startTime": "09:00", "endTime": "12:00" }
+        ]
+      }
+    ],
+    "exceptions": []
+  },
+  {
+    "id": "3",
+    "userId": "7",
+    "userName": "Thomas Visser",
+    "role": "COACH",
+    "weeklySchedule": [
+      {
+        "day": "TUESDAY",
+        "slots": [
+          { "startTime": "09:00", "endTime": "12:00" },
+          { "startTime": "13:00", "endTime": "17:00" }
+        ]
+      },
+      {
+        "day": "THURSDAY",
+        "slots": [
+          { "startTime": "09:00", "endTime": "12:00" },
+          { "startTime": "13:00", "endTime": "17:00" }
+        ]
+      }
+    ],
+    "exceptions": [
+      {
+        "date": "2025-05-16",
+        "available": false,
+        "reason": "Training"
+      }
+    ]
+  }
+]

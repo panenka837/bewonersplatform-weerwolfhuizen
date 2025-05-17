@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "title": "Nieuwe huismeester aangesteld",
+    "content": "Per 1 juni zal dhr. Jansen de nieuwe huismeester zijn. Hij is bereikbaar op telefoonnummer 06-12345678.",
+    "important": true,
+    "createdAt": "2025-05-01T10:00:00Z",
+    "updatedAt": "2025-05-01T10:00:00Z",
+    "expiresAt": "2025-06-01T23:59:59Z"
+  },
+  {
+    "id": "2",
+    "title": "Glasvezel installatie",
+    "content": "In de week van 20 mei wordt glasvezel geïnstalleerd in het complex. Hiervoor moeten monteurs toegang hebben tot alle woningen.",
+    "important": true,
+    "createdAt": "2025-05-02T14:30:00Z",
+    "updatedAt": "2025-05-02T14:30:00Z",
+    "expiresAt": "2025-05-25T23:59:59Z"
+  },
+  {
+    "id": "3",
+    "title": "Nieuwe openingstijden fietsenstalling",
+    "content": "Vanaf 1 juni is de fietsenstalling 24 uur per dag toegankelijk met uw sleutel.",
+    "important": false,
+    "createdAt": "2025-05-03T09:15:00Z",
+    "updatedAt": "2025-05-03T09:15:00Z",
+    "expiresAt": "2025-06-15T23:59:59Z"
+  }
+]

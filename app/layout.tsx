@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
 import NavBar from "./NavBar";
-import ProtectedRoute from "./ProtectedRoute";
 
 export const metadata: Metadata = {
   title: "Bewonersplatform Weerwolfhuizen",
@@ -18,7 +17,7 @@ export default function RootLayout({
     <html lang="nl">
       <body className="bg-white min-h-screen antialiased">
         <NavBar />
-        <ProtectedRoute>{children}</ProtectedRoute>
+        {children}
       </body>
     </html>
   );

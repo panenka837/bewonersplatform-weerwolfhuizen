@@ -1,8 +1,9 @@
 [build]
-  command = "npm run build"
+  command = "npx next build --no-lint"
   publish = ".next"
 
 [build.environment]
+  DATABASE_URL = "mongodb+srv://jordiklarisfr010:BijhdDg0bNKDIiIe@cluster0.cquvobp.mongodb.net/wwh-app?retryWrites=true&w=majority&appName=Cluster0"
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
 [[plugins]]

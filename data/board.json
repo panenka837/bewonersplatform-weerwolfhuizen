@@ -1,0 +1,79 @@
+[
+  {
+    "id": "1",
+    "title": "Gratis plantenstekjes!",
+    "description": "Af te halen bij appartement 7C, zolang de voorraad strekt. Verschillende soorten kamerplanten beschikbaar.",
+    "price": null,
+    "category": "AANGEBODEN",
+    "condition": "GOED",
+    "userId": "2",
+    "userName": "M. Visser",
+    "contactInfo": "Appartement 7C",
+    "createdAt": "2025-05-06T10:30:00.000Z",
+    "updatedAt": "2025-05-06T10:30:00.000Z"
+  },
+  {
+    "id": "2",
+    "title": "Boeken te ruil",
+    "description": "Diverse romans en thrillers beschikbaar om te ruilen. Interesse? Stuur een berichtje!",
+    "price": null,
+    "category": "AANGEBODEN",
+    "condition": "GEBRUIKT",
+    "userId": "3",
+    "userName": "P. van Leeuwen",
+    "contactInfo": "Appartement 12B, 06-12345678",
+    "createdAt": "2025-05-07T14:15:00.000Z",
+    "updatedAt": "2025-05-07T14:15:00.000Z"
+  },
+  {
+    "id": "3",
+    "title": "Hulp gevraagd met verhuizen",
+    "description": "Wie kan mij zaterdagmiddag helpen dozen tillen? Ik bied een vergoeding van €20 per uur.",
+    "price": 20,
+    "category": "DIENSTEN",
+    "userId": "4",
+    "userName": "S. de Groot",
+    "contactInfo": "Appartement 3A, 06-87654321",
+    "createdAt": "2025-05-08T09:45:00.000Z",
+    "updatedAt": "2025-05-08T09:45:00.000Z"
+  },
+  {
+    "id": "4",
+    "title": "Tweedehands fiets te koop",
+    "description": "Batavus damesfiets, 3 jaar oud maar in goede staat. Met slot en verlichting.",
+    "price": 150,
+    "category": "TE_KOOP",
+    "condition": "GOED",
+    "userId": "5",
+    "userName": "K. Jansen",
+    "contactInfo": "Appartement 5D, 06-23456789",
+    "createdAt": "2025-05-10T16:20:00.000Z",
+    "updatedAt": "2025-05-10T16:20:00.000Z"
+  },
+  {
+    "id": "5",
+    "title": "Gezocht: Kinderstoel",
+    "description": "Ik ben op zoek naar een tweedehands kinderstoel in goede staat. Liefst een die ook als tafelstoel gebruikt kan worden.",
+    "price": null,
+    "category": "GEZOCHT",
+    "userId": "6",
+    "userName": "L. Bakker",
+    "contactInfo": "Appartement 9E, 06-34567890",
+    "createdAt": "2025-05-11T11:05:00.000Z",
+    "updatedAt": "2025-05-11T11:05:00.000Z"
+  },
+  {
+    "id": "a6ead423-d814-4f1c-b257-75a6c09ff19c",
+    "title": "dummy",
+    "description": "blijven proberen",
+    "price": null,
+    "category": "AANGEBODEN",
+    "condition": "GOED",
+    "images": [],
+    "userId": "1",
+    "userName": "Jan Bewoner",
+    "contactInfo": "app. D",
+    "createdAt": "2025-05-12T07:41:11.570Z",
+    "updatedAt": "2025-05-12T07:42:18.565Z"
+  }
+]

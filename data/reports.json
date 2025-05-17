@@ -1,0 +1,53 @@
+[
+  {
+    "id": "a8a1e8a7-69f7-402b-b7d5-1b042e532cd3",
+    "title": "lift kapot",
+    "description": "lift niet open",
+    "category": "MAINTENANCE",
+    "status": "CLOSED",
+    "priority": "MEDIUM",
+    "reporterId": "1",
+    "reporterName": "Beheerder",
+    "createdAt": "2025-05-10T18:12:30.927Z",
+    "updatedAt": "2025-05-10T18:33:00.163Z",
+    "location": "lift",
+    "images": [],
+    "conversationId": "77f2a19f-94c7-463e-bc70-fb72a20cc685",
+    "assignedToId": "1",
+    "assignedToName": "Beheerder",
+    "resolvedAt": "2025-05-10T18:32:35.333Z"
+  },
+  {
+    "id": "1e0a7548-be29-4040-ba0e-0c5b6691f963",
+    "title": "test",
+    "description": "1234",
+    "category": "OTHER",
+    "status": "CLOSED",
+    "priority": "MEDIUM",
+    "reporterId": "2",
+    "reporterName": "Anna Jansen",
+    "createdAt": "2025-05-10T18:55:07.128Z",
+    "updatedAt": "2025-05-13T10:12:59.834Z",
+    "images": [],
+    "conversationId": "b17a29b6-a8d5-4e34-8200-866365c68ea1",
+    "assignedToId": "1",
+    "assignedToName": "Beheerder"
+  },
+  {
+    "id": "c288316b-ee8f-4bec-a409-e216044e1024",
+    "title": "Warmte",
+    "description": "overal warm",
+    "category": "COMPLAINT",
+    "status": "CLOSED",
+    "priority": "MEDIUM",
+    "reporterId": "1",
+    "reporterName": "Beheerder",
+    "createdAt": "2025-05-11T17:44:35.624Z",
+    "updatedAt": "2025-05-13T10:13:02.503Z",
+    "location": "alle appartementen aan de voorkant ",
+    "images": [],
+    "resolvedAt": "2025-05-13T10:12:44.101Z",
+    "assignedToId": "1",
+    "assignedToName": "Beheerder"
+  }
+]

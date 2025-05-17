@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import ClientProtectedRoute from "./components/ClientProtectedRoute";
 
-export default function Home() {
+function HomePage() {
   return (
     <main className="p-8 max-w-5xl mx-auto bg-white rounded-lg shadow-lg">
       <div className="text-center mb-10">
@@ -55,24 +58,19 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 shadow-sm mb-8">
-        <h2 className="text-xl font-bold text-gray-900 mb-3">Snelle links</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <Link href="/reports" className="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
-            <div className="text-yellow-600 font-semibold">Meldingen maken</div>
-          </Link>
-          <Link href="/documents" className="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
-            <div className="text-blue-600 font-semibold">Documenten</div>
-          </Link>
-          <Link href="/board" className="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
-            <div className="text-pink-600 font-semibold">Prikbord</div>
-          </Link>
-        </div>
-      </div>
+
 
       <div className="text-center text-gray-600 text-sm">
         <p>© 2025 Bewonersplatform Weerwolfhuizen. Alle rechten voorbehouden.</p>
       </div>
     </main>
+  );
+}
+
+export default function Home() {
+  return (
+    <ClientProtectedRoute>
+      <HomePage />
+    </ClientProtectedRoute>
   );
 }

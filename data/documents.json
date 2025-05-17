@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "name": "Huishoudelijk Reglement.pdf",
+    "type": "PDF",
+    "description": "Regels en afspraken voor bewoners van Weerwolfhuizen",
+    "filePath": "/documents/huishoudelijk-reglement.pdf",
+    "createdAt": "2025-05-01T10:00:00Z",
+    "updatedAt": "2025-05-01T10:00:00Z"
+  },
+  {
+    "id": "2",
+    "name": "Aanvraagformulier Parkeerplaats.docx",
+    "type": "Word",
+    "description": "Formulier voor het aanvragen van een parkeerplaats",
+    "filePath": "/documents/aanvraagformulier-parkeerplaats.docx",
+    "createdAt": "2025-05-02T14:30:00Z",
+    "updatedAt": "2025-05-02T14:30:00Z"
+  },
+  {
+    "id": "3",
+    "name": "Handleiding Brandveiligheid.pdf",
+    "type": "PDF",
+    "description": "Informatie over brandveiligheid in het complex",
+    "filePath": "/documents/handleiding-brandveiligheid.pdf",
+    "createdAt": "2025-05-03T09:15:00Z",
+    "updatedAt": "2025-05-03T09:15:00Z"
+  }
+]

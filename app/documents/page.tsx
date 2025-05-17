@@ -1,20 +1,39 @@
+"use client";
 import React, { useState, useEffect } from "react";
 
 type Document = {
-  id: number;
+  id: string;
   name: string;
   type: string;
+  description?: string;
+  filePath: string;
+  createdAt: string;
+  updatedAt: string;
 };
 
-const dummyDocs: Document[] = [
-  { id: 1, name: "Huishoudelijk Reglement.pdf", type: "PDF" },
-  { id: 2, name: "Aanvraagformulier Parkeerplaats.docx", type: "Word" },
-  { id: 3, name: "Handleiding Brandveiligheid.pdf", type: "PDF" },
-];
-
 export default function DocumentsPage() {
-  const [documents, setDocuments] = useState<Document[]>(dummyDocs);
+  const [documents, setDocuments] = useState<Document[]>([]);
   const [name, setName] = useState("");
+  
+  // Haal documenten op uit de database
+  useEffect(() => {
+    async function fetchDocuments() {
+      try {
+        const response = await fetch('/api/documents');
+        
+        if (!response.ok) {
+          throw new Error('Fout bij het ophalen van documenten');
+        }
+        
+        const data = await response.json();
+        setDocuments(data);
+      } catch (err) {
+        console.error('Error fetching documents:', err);
+      }
+    }
+    
+    fetchDocuments();
+  }, []);
   const [type, setType] = useState("PDF");
   const [file, setFile] = useState<File | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
@@ -24,20 +43,40 @@ export default function DocumentsPage() {
     setIsAdmin(role === "beheerder");
   }, []);
 
-  const handleUpload = (e: React.FormEvent) => {
+  async function handleAddDocument(e: React.FormEvent) {
     e.preventDefault();
-    if (!name || !file) return;
-    setDocuments([
-      ...documents,
-      {
-        id: Date.now(),
-        name,
-        type,
-      },
-    ]);
-    setName("");
-    setType("PDF");
-    setFile(null);
+    if (name && type && file) {
+      try {
+        // In een echte app zou je hier de file uploaden naar een storage service
+        // en de URL opslaan in de database
+        const filePath = `/uploads/${file.name}`; // Dit is een placeholder
+        
+        const response = await fetch('/api/documents', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name,
+            type,
+            description: '',
+            filePath,
+          }),
+        });
+        
+        if (!response.ok) {
+          throw new Error('Fout bij het toevoegen van document');
+        }
+        
+        const newDoc: Document = await response.json();
+        setDocuments([...documents, newDoc]);
+        setName("");
+        setType("PDF");
+        setFile(null);
+      } catch (err) {
+        console.error('Error adding document:', err);
+      }
+    }
   };
 
   return (
@@ -48,7 +87,7 @@ export default function DocumentsPage() {
 
       {isAdmin && (
         <form
-          onSubmit={handleUpload}
+          onSubmit={handleAddDocument}
           className="mb-8 bg-blue-50 p-6 rounded-lg border border-blue-200 shadow-sm flex flex-col md:flex-row gap-4 items-center"
         >
           <input
